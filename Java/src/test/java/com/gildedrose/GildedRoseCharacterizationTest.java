@@ -15,14 +15,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Expected values were derived from the starter implementation, not from a
  * re-interpretation of the requirements prose.
  * <p>
- * Conjured items are intentionally omitted: they are not implemented yet.
+ * Conjured coverage lives in {@link ConjuredItemTest}.
  */
 @DisplayName("GildedRose characterization (existing behavior)")
 class GildedRoseCharacterizationTest {
 
-    private static final String AGED_BRIE = "Aged Brie";
-    private static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
-    private static final String BACKSTAGE = "Backstage passes to a TAFKAL80ETC concert";
+    private static final String AGED_BRIE = ItemNames.AGED_BRIE;
+    private static final String SULFURAS = ItemNames.SULFURAS;
+    private static final String BACKSTAGE = ItemNames.BACKSTAGE_PASSES;
     private static final String NORMAL = "+5 Dexterity Vest";
 
     private static Item afterOneDay(String name, int sellIn, int quality) {
